@@ -1,0 +1,98 @@
+.navbar-nav>li:first-of-type>a{
+    background-color:#000000;
+}
+.navbar-nav>li:last-of-type>a{
+    background-color:#2C7759;
+}
+
+/*选项卡部分*/
+#xuan>.container>ul{
+    background: #D9EDF6;
+}
+#xuan>.container>.tab-content>.tab-pane>.tab-left{
+    width:60%;
+    float: left;
+}
+#xuan>.container>.tab-content>.tab-pane>.tab-left>.panel-default>.pane1-orange{
+    background-color:#FEF7E4;
+    font-size:17px;
+}
+#home>div{
+    margin-top: 20px;
+}
+
+#home>div>.panel-default:last-of-type>.panel-body>.table{
+    margin: 0;
+}
+#home>div>.panel-default:last-of-type>.panel-body>.table>thead>tr{
+    font-weight:bold;
+    border:none;
+    border-bottom:3px solid #E6E6E6;
+}
+#home>div>.panel-default:last-of-type>.panel-body>.table>tbody>tr:first-of-type{
+    background: #F5F5F5;
+}
+#home>div>.panel-default:last-of-type>.panel-body>.table>tbody>tr:nth-of-type(2){
+    background:#DEF0D8;
+}
+#home>div>.panel-default:last-of-type>.panel-body>.table>tbody>tr:nth-of-type(3){
+    background:#FEF7E4;
+}
+#home>div>.panel-default:last-of-type>.panel-body>.table>tbody>tr:nth-of-type(4){
+    background:#F2DEDF;
+}
+.pb_1{
+    padding:0;
+}
+#home>div .panel-body>span:nth-of-type(2n-1){
+    color:#6B92AE;
+    font-weight:bold;
+}
+#home>div .panel-body>span:nth-of-type(2n){
+    color:#A4D5E8;
+    font-weight:bold;
+}
+.pane1-col>.pane1-orange{
+    background-color:#FEF7E4;
+}
+#profile>div .panel-body>span:nth-of-type(2n-1){
+    color:#6B92AE;
+    font-weight:bold;
+}
+#profile>div .panel-body>span:nth-of-type(2n){
+    color:#A4D5E8;
+    font-weight:bold;
+}
+/*第二页*/
+.btn-three{
+    /*只有border-radius为100%时,inline-block才会起作用*/
+    display: inline-block;
+    border:1px solid white;
+    height:20px;
+    width:20px;
+    border-radius:100%;
+    background-color: white;
+    color: #729F42;
+    font-size:15px;
+    font-weight:bold;
+}
+#profile{
+    margin-top: 20px;
+}
+#profile>.row>div>button>span{
+    display:block;
+}
+.Ewm{
+    margin-top:60px;
+}
+.thumbnail-1{
+    background-color: #d9edf6;
+}
+/*第三页*/
+#messages{
+    margin-top: 20px;
+}
+
+
+
+

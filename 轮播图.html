@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min2.css"/>
+    <style>
+        .pc_imgBox{
+            display: block;
+            height: 1000px;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .m_imgBox{
+            display: block;
+            width: 100%;
+        }
+        .m_imgBox img{
+            display: block;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <a href="#" class="pc_imgBox hidden-xs" style="background-image: url('images/1.jpg')"></a>
+            <a href="#" class="m_imgBox hidden-lg hidden-md hidden-sm"><img src="images/1.jpg" alt=""></a>
+        </div>
+        <div class="item">
+            <a href="#" class="pc_imgBox hidden-xs" style="background-image: url('images/2.jpg')"></a>
+            <a href="#" class="m_imgBox hidden-lg hidden-md hidden-sm"><img src="images/2.jpg" alt=""></a>
+        </div>
+        <div class="item">
+            <a href="#" class="pc_imgBox hidden-xs" style="background-image: url('images/3.jpg')"></a>
+            <a href="#" class="m_imgBox hidden-lg hidden-md hidden-sm"><img src="images/3.jpg" alt=""></a>
+        </div>
+        <div class="item">
+            <a href="#" class="pc_imgBox hidden-xs" style="background-image: url('images/4.jpg')"></a>
+            <a href="#" class="m_imgBox hidden-lg hidden-md hidden-sm"><img src="images/4.jpg" alt=""></a>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#carousel-example-generic"  data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>
+</body>
+
+<script src="lib/bootstrap/js/jquery-1.11.1.min.js"></script>
+<script src="lib/bootstrap/js/hammer.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+<script src="js/lun.js"></script>
+</html>

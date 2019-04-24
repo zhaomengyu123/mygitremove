@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=adge"/>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min2.css"/>
+    <link rel="stylesheet" href="css/doc.css"/>
+    <title>医药卫生项目</title>
+</head>
+<body>
+<!--导航栏-->
+<nav class="navbar navbar-default mynav">
+    <div class="container">
+        <!--navbar-brand 的 <a> 元素。这会让文本看起来更大一号。-->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <span class="glyphicon glyphicon-home"></span>
+                <span>病人集成视图</span>
+            </a>
+        </div>
+        <div>
+            <!--navbar-right针对导航栏向右浮动-->
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">
+                    <span class="glyphicon glyphicon-user"></span>
+                    <span>刘兰花</span>
+                </a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="glyphicon glyphicon-screenshot"></span>
+                        <span>常用系统操作</span>
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">检索功能</a></li>
+                        <li><a href="#">视图切换</a></li>
+                        <li><a href="#">进入门户</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">注册推出</a></li>
+                    </ul>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section id="xuan">
+    <div class="container">
+        <!-- 所有选项卡标题 -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">病例概要</a></li>
+            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">住院信息</a></li>
+            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">门诊信息</a></li>
+        </ul>
+        <!-- 所有选项卡内容 -->
+        <div class="tab-content">
+            <div role="tabpanel" class="row tab-pane fade in active clearfix" id="home">
+                <!--内容一-->
+                <div class="col-xs-12 col-md-8">
+                    <div class="panel panel-default pane1-col">
+                        <div class="panel-heading pane1-orange">病人基本信息</div>
+                        <div class="panel-body">
+                            <span>患者姓名：</span>
+                            <span>刘兰花</span> |
+                            <span>年龄：</span>
+                            <span>24</span> |
+                            <span>性别：</span>
+                            <span>女 </span>|
+                            <span>婚姻状况：</span>
+                            <span>已婚</span>
+                            <span>国籍：</span>
+                            <span>中国 </span>|
+                            <span>联系电话：</span>
+                            <span>83836632</span> |
+                            <span>出生地：</span>
+                            <span>福建省福州市</span> |
+                            <span>通讯地址：</span>
+                            <span>上海新村60-156</span>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default pane1-col">
+                        <div class="panel-heading pane1-orange">
+                            <h3 class="panel-title">就诊记录</h3>
+                        </div>
+                        <div class="panel-body pb_1">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <td>病症</td>
+                                    <td>时间</td>
+                                    <td>就诊医院</td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>感冒</td>
+                                    <td>23/11/2013</td>
+                                    <td>厦门附一</td>
+                                </tr>
+                                <tr>
+                                    <td>破伤风</td>
+                                    <td>10/11/2013</td>
+                                    <td>福州附一</td>
+                                </tr>
+                                <tr>
+                                    <td>肿瘤</td>
+                                    <td>20/10/2013</td>
+                                    <td>第一医院</td>
+                                </tr>
+                                <tr>
+                                    <td>恶性肿瘤</td>
+                                    <td>20/10/2013</td>
+                                    <td>乌海市医</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4 tab_right">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">疾病史</div>
+                        <div class="panel-body">
+                           疾病史
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">传染病史</h3>
+                        </div>
+                        <div class="panel-body">
+                            传染病史
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">预防接种史</h3>
+                        </div>
+                        <div class="panel-body">
+                            预防疾病史
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">手术史</h3>
+                        </div>
+                        <div class="panel-body">
+                           手术史
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--第二页内容-->
+            <div role="tabpanel" class="tab-pane row fade" id="profile">
+                <div class="col-md-8 col-xs-12">
+                    <div class="panel panel-default pane1-col">
+                        <div class="panel-heading pane1-orange">病人住院信息</div>
+                        <div class="panel-body">
+                            <span>住院号：</span>
+                            <span>0654719001</span> |
+                            <span>主管医生：</span>
+                            <span>陈观富/1990</span> |
+                            <span>在院天数：</span>
+                            <span>18 </span>|
+                            <span>入院日期：</span>
+                            <span>2014-02-03</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <p>展示方式切换<input type="checkbox"/></p>
+                </div>
+                <div class="col-md-2">
+                    <!-- 右侧按钮组 -->
+                    <div class="btn-group ">
+                        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            历次住院记录<span class="btn-three">3</span><span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">2015-12-12</a></li>
+                            <li><a href="#">2014-12-12</a></li>
+                            <li><a href="#">2013-12-12</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <!-- 按钮-->
+                        <!--btn-lg大按钮-->
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+                            <span class="glyphicon glyphicon-qrcode"></span>检验报告
+                        </button>
+
+                        <!--点击按钮的模态框-->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        ...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-success">
+                            <span class="glyphicon glyphicon-headphones"></span>检验报告
+                        </button>
+                        <button class="btn btn-success">
+                            <span class="glyphicon glyphicon-barcode"></span>长期用药
+                        </button>
+                        <button class="btn btn-success">
+                            <span class="glyphicon glyphicon-inbox"></span>临时用药
+                        </button>
+                        <button class="btn btn-success">
+                            <span class="glyphicon glyphicon-inbox"></span>呼吸体温
+                        </button>
+                        <button class="btn btn-success">
+                            <span class="glyphicon glyphicon-inbox"></span>护理记录
+                        </button>
+                        <button class="btn btn-success">
+                            <span class="glyphicon glyphicon-inbox"></span>血压脉搏
+                        </button>
+                        <button class="btn btn-success">
+                            <span class="glyphicon glyphicon-inbox"></span>输入液量
+                        </button>
+                        <button class="btn btn-success">
+                            <span class="glyphicon glyphicon-inbox"></span>尿量记录
+                        </button>
+                    </div>
+                </div>
+               <div class="row Ewm">
+                   <div class="col-md-12">
+                       <div class="col-md-3">
+                           <span class="label-default">
+                               <i class="glyphicon glyphicon-qrcode"></i>
+                               检验报告
+                           </span>
+                           <hr/>
+                       </div>
+                   </div>
+               </div>
+                <div class="row">
+                    <!--thumbnail是缩略图-->
+                    <!--text-info字体颜色改变-->
+                    <div class="col-md-3 text-center text-info">
+                        <div class="thumbnail thumbnail-1">
+                            <p>红细胞沉淀率测定</p>
+                            <p>2012-12-12</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3 text-center text-info">
+                        <div class="thumbnail thumbnail-1">
+                            <p>红细胞沉淀率测定</p>
+                            <p>2012-12-12</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3 text-center text-info">
+                        <div class="thumbnail thumbnail-1">
+                            <p>红细胞沉淀率测定</p>
+                            <p>2012-12-12</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3 text-center text-info">
+                        <div class="thumbnail thumbnail-1">
+                            <p>红细胞沉淀率测定</p>
+                            <p>2012-12-12</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--第三页内容-->
+            <div role="tabpanel" class="tab-pane row fade" id="messages">
+                <div class="col-md-8 col-xs-12">
+                    <div class="panel panel-default pane1-col">
+                        <div class="panel-heading pane1-orange">病人住院信息</div>
+                        <div class="panel-body">
+                            <span>住院号：</span>
+                            <span>0654719001</span> |
+                            <span>主管医生：</span>
+                            <span>陈观富/1990</span> |
+                            <span>在院天数：</span>
+                            <span>18 </span>|
+                            <span>入院日期：</span>
+                            <span>2014-02-03</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <p>展示方式切换<input type="checkbox"/></p>
+                </div>
+                <div class="col-md-2">
+                    <!-- 右侧按钮组 -->
+                    <div class="btn-group ">
+                        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            历次住院记录<span class="btn-three">3</span><span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">2015-12-12</a></li>
+                            <li><a href="#">2014-12-12</a></li>
+                            <li><a href="#">2013-12-12</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion"
+                                           href="#collapseOne">
+                                           <span class="glyphicon glyphicon-star text-info"></span>
+                                            <span class="text-info">检验报告(展开)</span>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                                        vice lomo.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion"
+                                           href="#collapseTwo">
+                                            <span class="glyphicon glyphicon-heart text-info"></span>
+                                            <span class="text-info">检查报告(展开)</span>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                                        vice lomo.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion"
+                                           href="#collapseThree">
+                                            <span class="glyphicon glyphicon-star text-info"></span>
+                                            <span class="text-info">长期用药(展开)</span>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                                        vice lomo.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion"
+                                           href="#collapsefour">
+                                            <span class="glyphicon glyphicon-asterisk text-info"></span>
+                                            <span class="text-info">临时用药(展开)</span>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapsefour" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                                        vice lomo.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row Ewm">
+                    <div class="col-md-12">
+                        <div class="col-md-3">
+                           <span class="label-default">
+                               <i class="glyphicon glyphicon-qrcode"></i>
+                               检验报告
+                           </span>
+                            <hr/>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--thumbnail是缩略图-->
+                    <!--text-info字体颜色改变-->
+                    <div class="col-md-3 text-center text-info">
+                        <div class="thumbnail thumbnail-1">
+                            <p>红细胞沉淀率测定</p>
+                            <p>2012-12-12</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3 text-center text-info">
+                        <div class="thumbnail thumbnail-1">
+                            <p>红细胞沉淀率测定</p>
+                            <p>2012-12-12</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3 text-center text-info">
+                        <div class="thumbnail thumbnail-1">
+                            <p>红细胞沉淀率测定</p>
+                            <p>2012-12-12</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3 text-center text-info">
+                        <div class="thumbnail thumbnail-1">
+                            <p>红细胞沉淀率测定</p>
+                            <p>2012-12-12</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+</body>
+<script src="lib/jquery/jquery-3.3.1.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/doc.js"></script>
+</html>
